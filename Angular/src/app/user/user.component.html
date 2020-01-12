@@ -1,0 +1,99 @@
+
+
+<div class="row">
+
+
+
+	<div class="col-md-4">
+		</div>
+
+
+			<div class="col-md-4">
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+					<div class="panel panel-danger">
+							<div class="panel-heading">Login</div>
+
+							<div class="panel-body">
+
+
+
+									<div class="col-xs-12 text-center">
+											<form [formGroup]='loginform' (ngSubmit)="CheckUserDetail(loginform)" style="border: 5px solid black ,height 40%">
+											<input class="form-control"  formControlName="email" placeholder="ENTER USER NAME" type="email">
+											<div *ngIf="loginform.controls['email'].touched && !loginform.controls['email'].valid">  
+													<span *ngIf="loginform.controls['email'].hasError('required') ">  
+															email is required  
+													</span>
+													<span *ngIf="loginform.controls['email'].hasError('email') ">  
+															email Invalid 
+													</span>
+									  </div>
+											<label for="ex3"></label>
+											<input class="form-control" formControlName="password" placeholder= "ENTER PASSWORD" type="password">
+											<div *ngIf="loginform.controls['password'].touched && !loginform.controls['password'].valid">  
+													<span *ngIf="loginform.controls['password'].hasError('required') ">  
+														  password is required  
+													</span>
+													<span *ngIf="loginform.controls['password'].hasError('minlength') ">  
+														password should be alteast 10 character long  
+													</span>
+													<span *ngIf="loginform.controls['password'].hasError('maxlength') ">  
+														password should be less then 12 characters  
+													</span>
+									  </div>
+<br>
+											<button type="submit" class="btn btn-warning">LOGIN</button>
+</form>
+										  </div>
+
+							</div>
+						  </div>
+
+
+				</div>
+
+
+
+					<div class="col-md-4">
+						</div>
+				
+	
+</div>
+
+
+<!-- 
+
+			  <form [formGroup]='loginform' (ngSubmit)="CheckUserDetail(loginform)" style="border: 5px solid black ,height 40%">
+
+				   Email : <input type="email" formControlName="email" placeholder="Email Address"/>
+				        <div *ngIf="loginform.controls['email'].touched && !loginform.controls['email'].valid">  
+					            <span *ngIf="loginform.controls['email'].hasError('required') ">  
+						                email is required  
+					            </span>
+					            <span *ngIf="loginform.controls['email'].hasError('email') ">  
+					                	email Invalid 
+					            </span>
+                  </div>
+          Password :<input type="password" formControlName="password" placeholder="Password"/>
+                
+		<div *ngIf="loginform.controls['password'].touched && !loginform.controls['password'].valid">  
+					<span *ngIf="loginform.controls['password'].hasError('required') ">  
+						  password is required  
+					</span>
+					<span *ngIf="loginform.controls['password'].hasError('minlength') ">  
+						password should be alteast 10 character long  
+					</span>
+					<span *ngIf="loginform.controls['password'].hasError('maxlength') ">  
+						password should be less then 12 characters  
+					</span>
+      </div>
+      <br>
+      <br>
+      <button    type="submit" class="btn btn-primary">LOGIN</button>
+	</form> -->

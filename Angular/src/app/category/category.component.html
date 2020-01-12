@@ -1,0 +1,133 @@
+<div class="container-fluid">
+
+        <div class="row"> 
+       
+      <br>
+    
+
+          <form [formGroup]="addProductForm" (ngSubmit)= "GetProductsByCategory()">
+                    <div class="panel panel-success"  >
+                            <div class="panel-heading">SELECT BOOK OF YOUR CHOICE</div>
+                            <div class="panel-body">
+                          
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                          <label for="sel1">Select Type:</label>      
+                          <select  (change)= SelectTypeFunction($event.target.value)
+                          class="form-control" 
+                          id="drpdwn_Type">
+                          <option value="0">Select Type (eg...Ebook ,Video ,Audio)</option>  
+                          <option *ngFor="let i of TypePocoListArray"
+                           value={{i.Type_Id}}>  {{i.Type_desc}}  
+                          </option>
+                       </select>
+                       </div>                      
+                  </div>
+  
+                  
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                          <label for="sel1">Select Language:</label>
+                          <select (change)= SelectLanguageFunction($event.target.value)
+                          class="form-control" 
+                          id="drpdwn_Language">
+                          <option value="0">Select Language (eg...English , Hindi , Gujrati )</option>  
+                          <option *ngFor="let i of LanguageListArray" 
+                           value={{i.Lang_Id}}>  
+                              {{i.Lang_desc}}  
+                          </option>
+                       </select>
+                      </div>
+                  </div>
+    
+    
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                          <label for="sel1">Select Category:</label>
+                          <select (change)= SelectCategoryFunction($event.target.value)
+                          class="form-control" 
+                          id="drpdwn_Category">
+                          <option value="0">Select Category (eg...LoveStory,Scifi,Comics)</option>  
+                          <option *ngFor="let i of CategoryListArray" 
+                           value={{i.Cat_Id}}>  
+                              {{i.Cat_desc}}  
+                          </option>
+                       </select>
+                       </div>
+                  </div>
+
+                  <button    type="submit" class="btn btn-primary center-block">Submit</button>
+
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+
+                  <button  type="submit" class="btn btn-primary center-block">LOAD</button>
+
+
+                  
+
+                </div>
+            </div>
+              </form>
+            </div> 
+
+                <table class="table table-bordered table-striped">
+                       
+                    <thead>
+
+                        <tr>
+                        <th>BOOK IMAGE</th>
+                        <th>BOOK TITLE</th>
+                        <th>BOOK PRICE</th>
+                        <th>BOOK AUTHOR</th>
+                        <th>BOOK DESCRIPTION</th>
+                        <th></th>
+                        </tr>
+
+                        </thead>
+                        
+                        
+                        <tbody>
+
+                        <tr *ngFor = "let d of ProductListArray ">
+                        <td > <img src="{{d.p.Prod_img}}"  height="200" width="200" style="border:solid 5px"/></td>
+                        <td class="info" > <i><b> {{d.p.Prod_title}}</b></i> </td>
+                        <td class="success"> <b> ₹ : {{d.p.Prod_saleprice}} </b> </td>
+                        <td class="success"> <b> {{d.p.Prod_author}} </b></td>
+                        <td class="success"> <b> {{d.param.Param_desc}} </b></td>
+                        <td class="warning"> <button (click)='Buy(d.p.ProductMaster_Prod_Id)' class="btn btn-danger">Purchase</button></td>
+
+                        </tbody>
+                        </table>
+
+         <!-- <div *ngFor = "let d of ProductListArray ">
+        
+
+
+           <table class="table">
+              <tr>
+                  <td>
+                          <img src="{{d.p.Prod_img}}"  height="100" width="100"/>
+                  </td>
+                  <td>
+                          <div><p> Id : {{d.p.ProductMaster_Prod_Id}} </p></div>
+                          <div><p> Title : {{d.p.Prod_title}} </p></div>
+                          <div><p> {{d.p.Prod_short_desc}} </p></div>
+                          <div><p> {{d.p.Prod_long_desc}} </p></div>
+                          <div><p> Author :{{d.p.Prod_author}} </p></div>
+                          <div><p>{{d.param.Param_desc}}  :  {{d.paramProduct.Param_Value}} </p></div>
+                  </td>
+                  <td>      
+                     Price: {{d.p.Prod_saleprice}}
+                      <li><button routerLink='/rent'>Rent</button></li>
+                    <li><button (click)='Buy()'>Purchase</button></li>
+                  </td>
+              </tr>
+          </table>
+         </div>                -->
+          
+                           
+
+</div>

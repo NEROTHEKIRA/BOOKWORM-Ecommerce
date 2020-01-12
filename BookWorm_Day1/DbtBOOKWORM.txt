@@ -1,0 +1,191 @@
+
+
+Table 1 Product master
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+SET IDENTITY_INSERT [dbo].[ProductMaster] ON
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (1, 1, 1, 1, N'Tales from Shakespeare', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'Story Edition', N'Long NOne', N'ABC', N'./assets/Image/TalesfromShakespeare.jpg', N'2019-11-19 00:00:00', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (2, 1, 1, 1, N'TheAlchemist', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'Most Awaited Fiction', N'Long NOne', N'ABC', N'./assets/Image/TheAlchemist.jpg', N'2019-11-19 00:00:00', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (3, 1, 1, 2, N'The Verdict: Decoding India''s Elections ', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'NOne', N'Long NOne', N'ABC', N'./assets/Image/The Verdict  Decoding Indias Elections.jpg', N'2019-11-19 13:29:50', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (4, 1, 1, 2, N'The Song of Achilles ', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'NOne', N'Long NOne', N'ABC', N'./assets/Image/The Song of Achilles.jpg', N'2019-11-19 13:29:50', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (5, 1, 1, 3, N'Will You Still Love Me', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'NOne', N'Long NOne', N'ABC', N'./assets/Image/WillYouStillLoveMe.jpg', N'2019-11-19 13:29:50', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (6, 1, 2, 3, N'Be My Perfect Ending', 50, 40, 30, N'2019-10-19 13:29:00', N'2019-11-19 13:29:50', N'NOne', N'Long NOne', N'ABC', N'./assets/Image/BeMyPerfectEnding.jpg', N'2019-11-19 13:29:50', 1, 0, 10, 2, N'ATUL')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (7, 1, 2, 4, N'The Theory of Everything', 10, 10, 5, N'2019-10-19 13:29:00', N'2019-10-19 13:29:00', N'fhdf', N'fhdfh', N'QWERT', N'./assets/Image/The Theory of Everything.jpg', N'2019-10-19 13:29:00', 1, 0, 1, 10, N'asd')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (8, 1, 2, 4, N'TheMartian', 10, 10, 5, N'2019-10-19 13:29:00', N'2019-10-19 13:29:00', N'fhdf', N'fhdfh', N'QWERT', N'./assets/Image/The Martian.jpg', N'2019-10-19 13:29:00', 1, 0, 1, 10, N'asd')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (9, 1, 3, 1, N'Meluhache MrityunjayThe ImmortalsOfMeluhaMarathi', 10, 10, 10, N'2019-10-19 13:29:00', N'2019-10-19 13:29:00', N'FHFCH', N'DFGDFG', N'DFG', N'./assets/Image/ImmortalsOfMeluhaMarathi.jpg', N'2019-10-19 13:29:00', 0, 1, 10, 20, N'asd')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (10, 1, 3, 1, N'Shivaji: The Great Maratha', 10, 10, 10, N'2019-10-19 13:29:00', N'2019-10-19 13:29:00', N'FHFCH', N'DFGDFG', N'DFG', N'./assets/Image/ShivajiTheGreatMaratha.jpg', N'2019-10-19 13:29:00', 0, 1, 10, 20, N'asd')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (11, 1, 1, 4, N'Black Holes: The Reith Lectures', 150, 73, 73, N'2019-10-19 06:15:00', N'2019-10-20 06:15:00', N'“It is said that fact is sometimes stranger than fiction, and nowhere is that more true than in the case of black holes. Black holes are stranger than anything dreamed up by science fiction writers.”', N'“It is said that fact is sometimes stranger than fiction, and nowhere is that more true than in the case of black holes. Black holes are stranger than anything dreamed up by science fiction writers.”', N'Stephen-Hawking', N'./assets/Image/BlackHolesTheReithLecture.jpg', N'2019-10-19 13:20:00', 1, 1, 10, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (12, 1, 1, 4, N'Relativity: The Special and the General Theory', 300, 150, 150, N'2019-10-19 00:00:00', N'2019-10-20 00:00:00', N'using the minimum of mathematical terms, the basic ideas and principles of the theory which has shaped the world we live in today.', N'In this work Einstein intended, as far as possible, to give an exact insight into the theory of relativity to those readers who, from a general and scientific philosophical point of view, are interested in the theory, but who are not conversant with the mathematical apparatus of theoretical physics. The theory of relativity enriched physics and astronomy during the 20th century.', N'Albert Einstein', N'./assets/Image/Relativity The Special and the General Theory.jpg', N'2019-10-11 00:00:00', 1, 1, 25, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (13, 1, 1, 4, N'The Theory of Everything', 300, 250, 250, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'Ideologies about the universe by Aristotle, Augustine, Hubble, Newton and Einstein have all been briefly introduced to the reader.', N'Seven lectures by the brilliant theoretical physicist have been compiled into this book to try to explain to the common man, the complex problems of mathematics and the question that has been gripped everyone all for centuries, the theory of existence.', N'Stephen Hawking', N'./assets/Image/The Theory of Everything science.jpg', N'2019-10-19 00:00:00', 0, 1, 15, 10, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (14, 1, 1, 4, N'Journey to the Center of the Earth', 250, 200, 200, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'Jules Verne’s unforgettable adventure tale Journey to the Center of the Earth takes on new life in this special edition brimming with spellbinding artwork by Kilian Eng.', N'In the midst of examining an ancient Icelandic manuscript, professor and mineralogist Otto Liedenbrock and his nephew Axel make an astonishing discovery. A secret parchment lies hidden in the pages, and on it a puzzling message in code: Descend, bold traveller, into the crater of the jokul of Sneffels…', N'Jules Verne', N'./assets/Image/Journey to the Center of the Earth.jpg', N'2019-10-19 00:00:00', 1, 1, 15, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (15, 1, 1, 4, N'The Time Machine', 250, 190, 190, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'A scientist and gentleman inventor in industrialized Victorian England claims to have irrefutable proof that time is not simply a concept—it’s a whole other dimension.', N'A cornerstone of speculative science fiction, The Time Machine launched the time-traveling genre, influenced generations of writers, and is recognized as a prescient vision of twenty-first-century fears—those of an impending environmental nightmare and the irreversible fate of a dying planet.', N'H . G. Wells', N'./assets/Image/The Time Machine.jpg', N'2019-10-18 00:00:00', 1, 1, 15, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (16, 1, 2, 2, N'Tenaliram', 100, 85, 85, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'This book consists of  interesting stories about Tenali Raman, the Vikatakavi (jester poet) in the court of king Krishnadeva Raya during his reign in South India.', N'This book consists of  interesting stories about Tenali Raman, the Vikatakavi (jester poet) in the court of king Krishnadeva Raya during his reign in South India. Each tale in this book reveals some or all facets of Tenali’s character-wit, wisdom and fair play. He was the favourite courtier of king Krishnadeva Raya, advising him in matters of the state along with being a poet by profession. These stories will teach valuable morals to children through humorous anecdotes.', N'Maple Press', N'./assets/Image/Tenaliram.jpg', N'2019-10-15 00:00:00', 1, 1, 10, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (17, 1, 2, 1, N'Bade Ghar Ki Beti', 50, 35, 35, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'Benimadha Singh was the landlord and nominee of Gauripur village. His grandfather had some great gains at some time. The village''s pond and pond, which were now difficult to repair, were the Kirti-pillars of them. It is said that the elephant was swirling at this door, now there was an old buffalo in his place, which had nothing in his body except the bone, but milk probably gave a lot, because neither one man hurdles on his head Lived only.', N'Benimadha Singh had paid more than half his property to the lawyers. His current income was not more than one thousand rupees annually. Mr. Thakur had two sons. The name of the elder was Shrikant Singh. He spent many days in labor and after BA. Had obtained the degree. Now there was a servant in a office. The little boy Lalbihari Singh was a double-edged young man. Filled face, broad chest', N'Prem Chand', N'./assets/Image/Bade Ghar Ki Beti.jpg', N'2019-10-16 00:00:00', 1, 1, 10, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (18, 1, 2, 1, N'Panchantra', 415, 400, 400, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'365 Panchatantra Stories is a collection of short stories, penned especially for young readers. The book contains stories from Indian Mythology, namely the Panchatantra collection.', N'The book comprises of stories about powerful kings and sages, wicked demons, beautiful goddesses and more. The central characters in theses enthralling fables are, most of the times, animals and birds where they are made to speak like humans. One can read fictional stories on crows, clever hares, cunning jackals, snakes and so on.', N'Vishnu Sharma', N'./assets/Image/Panchantra.jpg', N'2019-10-11 00:00:00', 1, 1, 11, 10, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (19, 1, 2, 2, N'Ramayana: Ram Charit Manas', 300, 280, 280, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'Tulsidas (1574) tells the story of Ram, the prince of Ayodhya, in Awadhi, a dialect of Hindi spoken in Awadh in Uttar Pradesh.', N'Tulsidas (1574) tells the story of Ram, the prince of Ayodhya, in Awadhi, a dialect of Hindi spoken in Awadh in Uttar Pradesh. The work consists of about a thousand stanzas, each about 12 to 18 lines, set in elegant rhyme. Every village and town in the Hindi heartland has a troupe that gives a theatrical performance, called Ramlila, based on Tulsidas'' work. Ramlila is enacted as part of the Vijaya Dashami celebrations.', N'Tulsidas', N'./assets/Image/Ramayana.jpg', N'1947-10-15 00:00:00', 1, 1, 11, 10, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (20, 1, 2, 2, N'Meri Jeevan Yatra', 150, 110, 110, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'From a child born in Rameswaram till becoming the eleventh president of India, Dr. A.P.J. Life of Abdul Kalam Extraordinary resolution is an inspirational story of the desire for strength, courage, passion and superiority.', N'In this series of short stories and lateral pictures, Dr. Kalam remembers the major moments of his past and tells the readers how those moments motivated him. They give a deep impression on their early life and those who come into contact with the excitement and love they talk about. He also spoke with great intimacy about his father and his close friends, including his gurus, who shaped his deep love, mother and their kindness, kindness, their thoughts and attitudes towards God.', N'Dr. A. P. J. Abdul Kalam', N'./assets/Image/Meri Jeevan Yatra.jpg', N'2019-10-01 00:00:00', 1, 1, 15, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (21, 1, 2, 2, N'MAIN KAUN HOON', 800, 715, 715, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'In ''MAIN KAUN HOON'', Swamiji has answered simple questions of a common man in simple words', N'In ''Who am I'', Swamiji has answered simple questions of a common man in simple words, he has tried to calm the curiosity in which he often gets confused - after all who he is? Who are these soul-gods? How can I know myself? What is the purpose of his life? What is the significance of religion in life? What is the significance of life? A motivational and knowledgeable book to reimburse many such questions and inquiries.', N'SWAMI VIVEKANAND', N'./assets/Image/SWAMI VIVEKANAND.jpg', N'2017-10-24 00:00:00', 1, 1, 15, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (22, 1, 2, 2, N'Agni Ki Udaan', 200, 169, 169, N'2019-10-19 00:00:00', N'2019-10-21 00:00:00', N'For Trishul, I was in the excitement of a person who not only has concrete information about electronics and missile warfare, but also can explain the complexities to increase mutual understanding among members of the team and get support from the team', N'For this, me the commander SR. Mohan looked fit, which had the magical power of working diligently. Commander Mohan had come to the defense research and development from the Navy. For the ''Agni'', which was my dream, there was a need for someone who could tolerate my interference in this project occasionally. This thing is for me RN Looked in Agarwal He was one of the classical students of the Madras Institute of Tekology.', N'Dr. A. P. J. Abdul Kalam,Arun Tiwari', N'./assets/Image/Agni Ki Udaan.jpg', N'2018-10-19 00:00:00', 1, 1, 10, 5, N'CKS')
+INSERT INTO [dbo].[ProductMaster] ([ProductMaster_Prod_Id], [Prod_type_id], [Prod_lang_id], [Prod_cat_id], [Prod_title], [Prod_price], [Prod_saleprice], [Prod_specialprice], [Prod_specialprice_fromdate], [Prod_specialprice_todate], [Prod_short_desc], [Prod_long_desc], [Prod_author], [Prod_img], [Prod_release_date], [Prod_rent], [Prod_lib], [Prod_rent_amt], [Prod_rent_mindays], [Prod_publisher]) VALUES (32, 1, 2, 1, N'Bhamati', 50, 80, 70, N'2019-10-19 00:00:00', N'2019-10-19 00:00:00', N'????? ?? ???????? ?? ????? ??? ???? ???? ?????? ???? ???????? ?? ?????? ???? ???? ?? ????? ??? ?? ??? ??????? ?? ???? ??? ?????? ??, ??? ???? ????? ??? ??? ? ??? ???', N'????? ?? ???????? ?? ????? ??? ???? ???? ?????? ???? ???????? ?? ?????? ???? ???? ?? ????? ??? ?? ??? ??????? ?? ???? ??? ?????? ??, ??? ???? ????? ??? ??? ? ??? ???', N'Ushakiran khan (Author)', N'./assets/Image/Bhamati.jpg', N'2019-10-20 00:00:00', 0, 0, 40, 3, N'Neha Publishers & Distributors (2011)')
+SET IDENTITY_INSERT [dbo].[ProductMaster] OFF
+
+
+
+Table 2
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+SET IDENTITY_INSERT [dbo].[Category] ON
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (1, N'Fiction', 1)
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (2, N'NonFiction', 2)
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (3, N'LoveStory', 1)
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (4, N'SciFi', 1)
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (5, N'Literature', 3)
+INSERT INTO [dbo].[Category] ([Cat_Id], [Cat_desc], [Cat_lang_id]) VALUES (7, N'Educational', 2)
+SET IDENTITY_INSERT [dbo].[Category] OFF
+
+Table 3 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Beneficiary] ON
+INSERT INTO [dbo].[Beneficiary] ([Benf_Id], [Benf_name], [Benf_acc_no], [Benf_contact], [Benf_email]) VALUES (1, N'Akash', 12345678, 9898989898, N'abc@gmail.com')
+INSERT INTO [dbo].[Beneficiary] ([Benf_Id], [Benf_name], [Benf_acc_no], [Benf_contact], [Benf_email]) VALUES (2, N'Aman', 987456123, 8787898985, N'aman@gmail.com')
+INSERT INTO [dbo].[Beneficiary] ([Benf_Id], [Benf_name], [Benf_acc_no], [Benf_contact], [Benf_email]) VALUES (3, N'Abhishek Buju', 52854120, 2145698721, N'plok@gmail.com')
+SET IDENTITY_INSERT [dbo].[Beneficiary] OFF
+
+Table 4
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Invoice] ON
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (1, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (2, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (3, 1, 40, 4)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (4, 3, 40, 4)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (5, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (6, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (7, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (8, 1, 40, 1)
+INSERT INTO [dbo].[Invoice] ([Invoice_Id], [Prod_id], [Prod_price], [User_Id]) VALUES (9, 1, 40, 1)
+SET IDENTITY_INSERT [dbo].[Invoice] OFF
+
+Table 5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Language] ON
+INSERT INTO [dbo].[Language] ([Lang_Id], [Lang_desc], [Lang_type_id]) VALUES (1, N'English', 1)
+INSERT INTO [dbo].[Language] ([Lang_Id], [Lang_desc], [Lang_type_id]) VALUES (2, N'Hindi', 1)
+INSERT INTO [dbo].[Language] ([Lang_Id], [Lang_desc], [Lang_type_id]) VALUES (3, N'Marathi', 1)
+SET IDENTITY_INSERT [dbo].[Language] OFF
+
+Table 6
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Myshelf] ON
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (1, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (2, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (3, 4, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (4, 4, 3, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (5, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (6, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (7, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (8, 1, 1, NULL, NULL)
+INSERT INTO [dbo].[Myshelf] ([Shelf_Id], [Shelf_user_id], [Shelf_prod_id], [Shelf_expire_on], [Is_Pack?]) VALUES (9, 1, 1, NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Myshelf] OFF
+
+
+Table 7
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Param] ON
+INSERT INTO [dbo].[Param] ([Param_Id], [Param_desc]) VALUES (1, N'Editor')
+INSERT INTO [dbo].[Param] ([Param_Id], [Param_desc]) VALUES (2, N'Narrator')
+INSERT INTO [dbo].[Param] ([Param_Id], [Param_desc]) VALUES (3, N'Cartoonist')
+INSERT INTO [dbo].[Param] ([Param_Id], [Param_desc]) VALUES (4, N'Actor')
+INSERT INTO [dbo].[Param] ([Param_Id], [Param_desc]) VALUES (5, N'Typist')
+SET IDENTITY_INSERT [dbo].[Param] OFF
+
+Table 8
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[ParamProduct] ON
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (1, 1, 1, N'Arjun')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (3, 2, 2, N'Chetan')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (4, 3, 1, N'Akshay')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (5, 4, 1, N'Akash')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (6, 5, 1, N'Nakul')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (7, 6, 1, N'Sahdev')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (8, 7, 1, N'Arjun')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (9, 8, 1, N'Karan')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (10, 9, 1, N'Ravan')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (11, 10, 1, N'Shubham ')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (12, 11, 1, N'Durga')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (13, 12, 1, N'Sandip')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (14, 13, 1, N'Kalyani')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (15, 14, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (16, 15, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (17, 16, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (18, 17, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (19, 18, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (20, 19, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (21, 20, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (22, 21, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (23, 22, 1, N'Jayant')
+INSERT INTO [dbo].[ParamProduct] ([Param_Product_Id], [Prod_Id], [Param_Param_Id], [Param_Value]) VALUES (24, 32, 1, N'Jayant')
+SET IDENTITY_INSERT [dbo].[ParamProduct] OFF
+
+
+Table 9
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+SET IDENTITY_INSERT [dbo].[Product_Beneficiary] ON
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (1, 1, 1, 20)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (2, 2, 2, 30)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (3, 3, 3, 40)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (4, 4, 1, 50)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (5, 5, 1, 60)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (6, 6, 2, 10)
+INSERT INTO [dbo].[Product_Beneficiary] ([Prod_Benf_Id], [Prod_id], [Benf_id], [Royalty_perc]) VALUES (7, 7, 1, 5)
+SET IDENTITY_INSERT [dbo].[Product_Beneficiary] OFF
+
+
+Table 10
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SET IDENTITY_INSERT [dbo].[Royalty_Calculation] ON
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (1, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (2, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (3, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (4, NULL, NULL, 3, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (5, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (6, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (7, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (8, NULL, NULL, 1, 40, 10)
+INSERT INTO [dbo].[Royalty_Calculation] ([Royalty_Calc_Id], [Benf_id], [Invoice_date], [Prod_id], [Prod_price], [Royalty_perc]) VALUES (9, NULL, NULL, 1, 40, 10)
+SET IDENTITY_INSERT [dbo].[Royalty_Calculation] OFF
+
+
+Table11
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+SET IDENTITY_INSERT [dbo].[Type] ON
+INSERT INTO [dbo].[Type] ([Type_Id], [Type_desc]) VALUES (1, N'Ebook ')
+INSERT INTO [dbo].[Type] ([Type_Id], [Type_desc]) VALUES (2, N'Audio ')
+INSERT INTO [dbo].[Type] ([Type_Id], [Type_desc]) VALUES (3, N'Video ')
+SET IDENTITY_INSERT [dbo].[Type] OFF
+
+
+Table 12
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+SET IDENTITY_INSERT [dbo].[UserInfo] ON
+INSERT INTO [dbo].[UserInfo] ([User_Id], [Name], [Password], [Email], [House_no], [Street], [City], [Pincode], [Landmark], [Date_of_birth]) VALUES (1, N'AKSHATA', N'AKSHATA123', N'AKSHATA@GMAIL.COM', 420, N'Near Vasi Petrol Pump', N'Vasi', 300040, N'Vasi Railway Station', N'1996-09-29')
+INSERT INTO [dbo].[UserInfo] ([User_Id], [Name], [Password], [Email], [House_no], [Street], [City], [Pincode], [Landmark], [Date_of_birth]) VALUES (2, N'ANKITA', N'ANKITA123', N'ANKITA123@GMAIL.COM', 17, N'Near Andheri East', N'Andheri', 400040, N'Andheri Marol Naka', N'1994-06-18')
+INSERT INTO [dbo].[UserInfo] ([User_Id], [Name], [Password], [Email], [House_no], [Street], [City], [Pincode], [Landmark], [Date_of_birth]) VALUES (4, N'BHUSHAN', N'BHUSHAN123', N'BHUSHAN123@gmail.com', 123, N'Near Juhu Circle', N'Andheri', 400049, N'Andheri West', N'1996-12-12')
+INSERT INTO [dbo].[UserInfo] ([User_Id], [Name], [Password], [Email], [House_no], [Street], [City], [Pincode], [Landmark], [Date_of_birth]) VALUES (5, N'Ankita', N'12345678', N'Ankita@gmail.com', 10, N'asdf', N'ad', 356012, N'sefef', N'2019-07-20')
+INSERT INTO [dbo].[UserInfo] ([User_Id], [Name], [Password], [Email], [House_no], [Street], [City], [Pincode], [Landmark], [Date_of_birth]) VALUES (6, N'narayan', N'narayan123', N'narayan@gmail.com', 30, N'10', N'ad', 356012, N'narayn nagar', N'2019-07-10')
+SET IDENTITY_INSERT [dbo].[UserInfo] OFF
+
+
+

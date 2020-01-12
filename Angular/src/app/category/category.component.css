@@ -1,0 +1,21 @@
+.table td {
+  text-align: center;  
+  vertical-align: middle;
+  font-size: 24px; 
+}.table th {
+  text-align: center;  
+  vertical-align: middle;
+  font-size: 24px; 
+}
+body {
+  padding: 30px;
+  margin: 30PX;
+
+}
+.panel {
+  border-color: #555;
+}
+
+.center-block {
+  float:none;
+}

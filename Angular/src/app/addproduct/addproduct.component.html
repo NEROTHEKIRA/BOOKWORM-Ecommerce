@@ -1,0 +1,273 @@
+<div class="container-fluid">
+
+<br/>
+<div class="panel panel-primary">
+
+    <div class="panel-heading">Add Product</div>
+   
+    <div class="panel-body">
+
+      <form [formGroup]="addProductForm" (ngSubmit)="onSubmit(addProductForm)">
+
+       
+          <div class="row">
+
+              <div class="col-sm-4">
+                  
+                <div class="form-group">    
+                      <label for="sel1">Select Type:</label>            
+                      <select 
+                      formControlName="Type_Id"
+                      class="form-control" 
+                      id="Type_Id">
+                      <option value="0">Select Type (eg...Ebook ,Video ,Audio)</option>  
+                      <option *ngFor="let i of TypePocoListArray" value={{i.Type_Id}}>  
+                        {{i.Type_desc}}  
+                      </option>
+                   </select>
+                   </div>
+
+
+                   <div class="form-group">
+                      <label for="For Prod_title">Add Product Title</label>
+                        <input 
+                        formControlName="Prod_title"
+                        type="text" 
+                         class="form-control"
+                         id="Prod_title"
+                        placeholder="ENTER PRODUCT TITLE">
+                      </div>
+
+
+                      <div class="form-group">
+                          <label for="For Prod_specialprice">Add Product Prod_specialprice</label>
+                          <input 
+                          type="number" 
+                          formControlName="Prod_specialprice"
+                          class="form-control"
+                          placeholder="ENTER PRODUCT Special-SALEPRIZE" 
+                          id="Prod_specialprice">
+                        </div>
+
+
+                        <div class="form-group">
+                          <label for="For Prod_author">Add Product Author</label>
+                          <input 
+                          type="text" 
+                          formControlName="Prod_author"
+                          class="form-control"
+                          placeholder="ENTER PRODUCT AUTHOR NAME" 
+                          id="Prod_author">
+                        </div>
+
+
+                        <div class="form-group">
+                          <label for="Sale Start Date">Sale Start Date</label>
+                          <input 
+                          type="text" 
+                          formControlName="Prod_specialprice_fromdate"
+                          class="form-control"
+                          placeholder="Sale Start Date" 
+                          id="Prod_specialprice_fromdate">
+                        </div>
+
+
+                        
+                        <div class="form-group">
+                            <label for="Prod_publisher">Product Publisher</label>
+                            <input 
+                            type="text" 
+                            formControlName="Prod_publisher"
+                            class="form-control"
+                            placeholder="Product Publisher" 
+                            id="Prod_publisher">
+                          </div>
+
+                        <div class="form-group">
+
+                            <label for="Sale Start Date">Select IS Rent Or NOT</label>
+                            <br>
+                        <label class="radio-inline">
+                          <input type="radio"  formControlName="Prod_rent" name="Prod_rent" value="true">YES</label> 
+                          <label class="radio-inline">
+                            <input type="radio"  formControlName="Prod_rent" name="Prod_rent" value="false">NO </label> 
+                        </div>
+         
+              </div>
+
+
+              <div class="col-sm-4">
+
+                  <div class="form-group">
+                      <label for="sel1">Select Language:</label>
+                      <select 
+                      formControlName="Lang_Id"
+                      class="form-control" 
+                      id="Lang_Id">
+                      <option value="0">Select Language (eg...English , Hindi , Gujrati )</option>  
+                      <option *ngFor="let i of LanguageListArray" 
+                       value={{i.Lang_Id}}>  
+                          {{i.Lang_desc}}  
+                      </option>
+                   </select>
+                   </div>
+          
+
+                   <div class="form-group">
+                      <label for="For Prod_price">Add Product price</label>
+                      <input 
+                      type="number" 
+                      formControlName="Prod_price"
+                      class="form-control" 
+                      id="Prod_price" 
+                      placeholder="ENTER PRODUCT PRIZE">
+                    </div>
+
+                    <div class="form-group">
+                       <label for="comment">Short Description</label>
+                      <textarea class="form-control" rows="4" 
+                  id="Prod_short_desc"
+                    formControlName="Prod_short_desc"
+                              placeholder="ENTER SHORT DESCRIPTION">
+              </textarea>
+              </div>
+
+
+              <div class="form-group">
+                <label for="Sale End Date">Sale End Date</label>
+                <input 
+      type="text" 
+      formControlName="Prod_specialprice_todate"
+      class="form-control"
+      placeholder="Sale End Date" 
+      id="Prod_specialprice_todate">
+    </div>
+
+    <div class="form-group">
+        <label for="for upload image ">Upload Image </label>
+        <input 
+        type="text" 
+        formControlName="Prod_img"
+        class="form-control"
+        placeholder="Select Image" 
+        id="Prod_img">
+      </div>
+
+
+    <div class="form-group">
+        <label for="Sale Start Date">Select IS LIBRARY Or NOT</label>
+        <br>
+    <label class="radio-inline">
+      <input type="radio"  formControlName="Prod_lib" name="Prod_lib" value="true"> YES </label>
+      <label class="radio-inline">
+        <input type="radio" formControlName="Prod_lib"  name="Prod_lib" value="false"> NO </label>
+      </div>
+      
+      
+
+        <button   type="submit" class="btn btn-primary">SUBMIT DATA</button>
+        
+
+        <button type="submit" class="btn btn-default">UPDATE DATA</button>  
+
+              </div>
+
+
+              <div class="col-sm-4">
+                
+
+                  <div class="form-group">
+                      <label for="sel1">Select Category:</label>
+                      <select 
+                   formControlName="Cat_Id"
+                      class="form-control" 
+                      id="Cat_Id">
+                      <option value="0">Select Category (eg...LoveStory,Scifi,Comics)</option>  
+                      <option *ngFor="let i of CategoryListArray" 
+                       value={{i.Cat_Id}}>  
+                          {{i.Cat_desc}}  
+                      </option>
+                   </select>
+                   </div>
+
+                   
+          <div class="form-group">
+              <label for="For Prod_saleprice">Add Product saleprice</label>
+              <input 
+              type="number" 
+              formControlName="Prod_saleprice"
+              class="form-control"
+              placeholder="ENTER PRODUCT SALEPRIZE" 
+              id="Prod_saleprice">
+            </div>
+
+            
+            <div class="form-group">
+              <label for="comment">Long Description</label>
+              <textarea class="form-control" rows="4"
+               id="Prod_long_desc"
+               formControlName="Prod_long_desc"
+               placeholder="ENTER LONG DESCRIPTION"
+               ></textarea>
+            </div>
+
+
+            <div class="form-group">
+              <label for="Release Date">Start Date</label>
+              <input 
+              type="text" 
+              formControlName="Prod_release_date"
+              class="form-control"
+              placeholder="Enter Product release date" 
+              id="Prod_release_date">
+            </div>
+        
+
+           
+           
+            <div class="form-group col-xs-3">
+                <label for="Release Date">Rent Amount </label>
+                <input 
+                type="text" 
+                formControlName="Prod_rent_amt"
+                class="form-control"
+                placeholder="Prod_rent_amt" 
+                id="Prod_rent_amt">
+              </div>
+
+              <div class="form-group col-xs-3">
+                  <label for="Rent Days">Rent Days </label>
+                  <input 
+                  type="text" 
+                  formControlName="Prod_rent_mindays"
+                  class="form-control"
+                  placeholder="Rent Days" 
+                  id="Prod_rent_amt">
+                </div>
+  
+                <div class="form-group col-xs-4">
+                    <label for="Release Date">Release Date</label>
+                    <input 
+                    type="text" 
+                    formControlName="Prod_release_date"
+                    class="form-control"
+                    placeholder="Prod_release_date" 
+                    id="Prod_release_date">
+                  </div>
+    
+
+              </div>
+           
+            </div>
+
+
+
+          </form>
+
+
+          {{addProductForm.value | json}}
+
+            </div>
+
+  </div>
+  </div>

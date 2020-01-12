@@ -1,0 +1,203 @@
+----------------------------------------------------------------------------
+CREATE TABLE [dbo].[ProductMaster]
+(
+    [ProductMaster_Prod_Id] INT NOT NULL IDENTITY(1,1),
+    [Prod_type_id] INT NOT NULL,
+    [Prod_lang_id] INT NOT NULL,
+    [Prod_cat_id] INT NOT NULL, 
+    [Prod_title] VARCHAR(MAX) NOT NULL, 
+    [Prod_price] FLOAT NOT NULL, 
+    [Prod_saleprice] FLOAT NOT NULL, 
+    [Prod_specialprice] FLOAT NOT NULL, 
+    [Prod_specialprice_fromdate] DATETIME2 NOT NULL, 
+    [Prod_specialprice_todate] DATETIME2 NOT NULL, 
+    [Prod_short_desc] VARCHAR(MAX) NOT NULL, 
+    [Prod_long_desc] VARCHAR(MAX) NOT NULL, 
+    [Prod_author] VARCHAR(MAX) NOT NULL, 
+    [Prod_img] VARCHAR(MAX) NOT NULL, 
+    [Prod_release_date] DATETIME2 NOT NULL, 
+    [Prod_rent] BIT NOT NULL, 
+    [Prod_lib] BIT NOT NULL, 
+    [Prod_rent_amt] FLOAT NOT NULL, 
+    [Prod_rent_mindays] INT NOT NULL, 
+    [Prod_publisher] VARCHAR(50) NOT NULL,
+    ADD CONSTRAINT PK_ProductMaster_Prod_Id PRIMARY KEY(ProductMaster_Prod_Id)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Type]
+(
+    [Type_Id] INT NOT NULL IDENTITY(1,1),
+    [Type_desc] CHAR(6) NOT NULL,
+    ADD CONSTRAINT PK_Type_Id PRIMARY KEY(Type_Id)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Language]
+(
+    [Lang_Id] INT NOT NULL IDENTITY(1,1),
+    [Lang_desc] NVARCHAR(20) NOT NULL, 
+    [Lang_type_id] INT NOT NULL,
+     ADD CONSTRAINT PK_Lang_Id PRIMARY KEY(Lang_Id)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Category]
+(
+    [Cat_Id] INT NOT NULL IDENTITY(1,1),
+    [Cat_desc] VARCHAR(MAX) NOT NULL, 
+    [Cat_lang_id] INT NOT NULL,
+    ADD CONSTRAINT PK_Cat_Id PRIMARY KEY(Cat_Id)
+);
+
+----------------------------------------------------------------------------
+CREATE TABLE [dbo].[Param]
+(
+    [Param_Id] INT NOT NULL IDENTITY(1,1),
+    [Param_desc] VARCHAR(20) NOT NULL,
+    ADD CONSTRAINT PK_Param_Id PRIMARY KEY(Param_Id)
+)
+----------------------------------------------------------------------------
+CREATE TABLE [dbo].[ParamProduct]
+(
+    [Param_Product_Id] INT NOT NULL IDENTITY(1,1),
+    [Prod_Id] INT NOT NULL, 
+    [Param_Param_Id] INT NOT NULL, 
+    [Param_Value] VARCHAR(MAX) NOT NULL,
+    ADD CONSTRAINT PK_Param_Product_Id PRIMARY KEY(Param_Product_Id)
+)
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Beneficiary] 
+(
+    [Benf_Id] INT NOT NULL IDENTITY (1,1),
+    [Benf_name] VARCHAR(MAX) NOT NULL, 
+    [Benf_acc_no] BIGINT NOT NULL, 
+    [Benf_contact_no] BIGINT NOT NULL, 
+    [Benf_email_id] VARCHAR(50) NOT NULL ,
+    ADD CONSTRAINT PK_Benf_Id PRIMARY KEY(Benf_Id)
+)
+
+----------------------------------------------------------------------------
+-********************************************************
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[ProductBeneficiary]
+(
+    [Prod_Benf_Id] INT NOT NULL  IDENTITY (1,1),
+    [Prod_Id] INT NOT NULL, 
+    [Benf_Id] INT NOT NULL, 
+    [Royalty_perc] INT NOT NULL, 
+    ADD CONSTRAINT PK_Prod_Benf_Id PRIMARY KEY(Prod_Benf_Id),
+    CONSTRAINT [FK_Product_Beneficiary_ProductMaster] FOREIGN KEY ([Prod_Id]) REFERENCES [ProductMaster]([Prod_Id]), 
+    CONSTRAINT [FK_Product_Beneficiary_Beneficiary] FOREIGN KEY ([Benf_Id]) REFERENCES [Beneficiary]([Benf_Id])
+)
+
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Royalty_Calc_Table]
+(
+    [RC_Id] INT NOT NULL IDENTITY (1,1),
+    [RC_benf_id] INT NOT NULL, 
+    [RC_invoice_date] DATETIME NOT NULL, 
+    [RC_invoice_id] INT NOT NULL, 
+    [RC_prod_Id] INT NOT NULL, 
+    [RC_prod_price] INT NOT NULL, 
+    [RC_royalty_amt] FLOAT NOT NULL, 
+    [RC_royalty_perc] INT NOT NULL, 
+    ADD CONSTRAINT PK_RC_Id PRIMARY KEY(RC_Id),
+    CONSTRAINT [FK_Royalty_Calc_Table_Product_Beneficiary] FOREIGN KEY ([RC_benf_id]) REFERENCES [Product_Beneficiary]([Benf_Id]), 
+    CONSTRAINT [FK_Royalty_Calc_Table_ProductMaster] FOREIGN KEY ([RC_prod_id]) REFERENCES [ProductMaster]([Prod_Id]), 
+    CONSTRAINT [FK_Royalty_Calc_Table_Invoice_Header] FOREIGN KEY ([RC_invoice_id]) REFERENCES [Invoice_Header]([Invoice_Id]), 
+    CONSTRAINT [FK_Royalty_Calc_Table_Invoice_Header] FOREIGN KEY ([RC_invoice_date]) REFERENCES [Invoice_Header]([Invoice_date])
+)
+
+----------------------------------------------------------------------------
+
+
+CREATE TABLE [dbo].[Admin]
+(
+    [Admin_Id] INT NOT NULL  IDENTITY(1,1), 
+    [Username] VARCHAR(20) NOT NULL, 
+    [Password] VARCHAR(20) NOT NULL,
+    ADD CONSTRAINT PK_Admin_Id PRIMARY KEY(Admin_Id)
+)
+
+----------------------------------------------------------------------------
+
+
+CREATE TABLE [dbo].[UserInfo]
+(
+    [User_Id] INT NOT NULL IDENTITY(1,1), 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Password] VARCHAR(50) NOT NULL, 
+    [Email] VARCHAR(30) NOT NULL, 
+    [House_no] INT NOT NULL, 
+    [Street] VARCHAR(MAX) NOT NULL, 
+    [City] VARCHAR(30) NOT NULL, 
+    [Pincode] INT NOT NULL, 
+    [Landmark] VARCHAR(50) NOT NULL, 
+    [Date_of_birth] DATE NOT NULL,
+    CONSTRAINT PK_User_Id PRIMARY KEY(User_Id)
+)
+
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Myshelf]
+(
+    [Shelf_Id] INT NOT NULL IDENTITY(1,1),  
+    [Shelf_user_id] INT NOT NULL, 
+    [Prod_id] INT NOT NULL, 
+    [Purchase_type] VARCHAR(50) NOT NULL, 
+    [Exp_date] DATETIME NOT NULL, 
+    [Is_pack] BIT NOT NULL, 
+    ADD CONSTRAINT PK_Shelf_Id PRIMARY KEY(Shelf_Id),
+    CONSTRAINT [FK_Myshelf_UserInfo] FOREIGN KEY ([Shelf_user_id]) REFERENCES [UserInfo]([UserId]), 
+    CONSTRAINT [FK_Myshelf_ProductMaster] FOREIGN KEY ([Prod_id]) REFERENCES [ProductMaster]([Prod_Id]) 
+)
+----------------------------------------------------------------------------
+
+CREATE TABLE [dbo].[Invoice_Header]
+(
+    [Invoice_Id] INT NOT NULL IDENTITY(1,1), 
+    [Invoice_date] DATETIME NOT NULL, 
+    [User_id] INT NOT NULL, 
+    [Amount] FLOAT NOT NULL,
+   ADD CONSTRAINT PK_Invoice_Id PRIMARY KEY(Invoice_Id)
+)
+
+----------------------------------------------------------------------------
+CREATE TABLE [dbo].[Invoice_Details]
+(
+    [Detail_Id] INT NOT NULL  IDENTITY(1,1), 
+    [Invoice_Id] INT NOT NULL, 
+    [Prod_id] INT NOT NULL, 
+    [Prod_price] FLOAT NOT NULL, 
+    [Prod_purchase_type] VARCHAR(50) NOT NULL, 
+    ADD CONSTRAINT PK_Detail_Id PRIMARY KEY(Detail_Id)
+    CONSTRAINT [FK_Invoice_Details_Invoice_Header] FOREIGN KEY ([Invoice_Id]) REFERENCES [Invoice_Header]([Invoice_Id]), 
+    CONSTRAINT [FK_Invoice_Details_ProductMaster] FOREIGN KEY ([Prod_id]) REFERENCES [ProductMaster]([Prod_Id]), 
+    CONSTRAINT [FK_Invoice_Details_ProductMaster] FOREIGN KEY ([Prod_price]) REFERENCES [ProductMaster]([Prod_saleprice])
+);
+----------------------------------------------------------------------------
+trigger
+
+CREATE TABLE [dbo].[Invoice] (
+    [Invoice_Id] INT        IDENTITY (1, 1) NOT NULL,
+    [Prod_id]    INT        NOT NULL,
+    [Prod_price] FLOAT (53) NOT NULL,
+    [User_Id]    INT        NULL,
+    CONSTRAINT [PK_Detail_Id] PRIMARY KEY CLUSTERED ([Invoice_Id] ASC, [Prod_id] ASC)
+);
+GO
+
+CREATE TRIGGER [Insert_Myshelf_Royalty_Calc]  ON Invoice 
+   After Insert,update   
+    AS   
+	 BEGIN  
+	  insert into Myshelf(Shelf_prod_id,Shelf_user_id) Select Prod_id,User_Id From inserted;
+	     insert into Royalty_Calculation(Prod_id,Prod_price) select Prod_id,Prod_price From inserted; 
+		   END

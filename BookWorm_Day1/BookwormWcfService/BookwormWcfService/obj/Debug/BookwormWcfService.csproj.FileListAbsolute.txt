@@ -1,0 +1,5 @@
+D:\Hiren_bookworm\BookWorm_Day1\BookwormWcfService\BookwormWcfService\bin\BookwormWcfService.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookwormWcfService\BookwormWcfService\bin\BookwormWcfService.pdb
+D:\Hiren_bookworm\BookWorm_Day1\BookwormWcfService\BookwormWcfService\obj\Debug\BookwormWcfService.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookwormWcfService\BookwormWcfService\obj\Debug\BookwormWcfService.pdb
+D:\Hiren_bookworm\BookWorm_Day1\BookwormWcfService\BookwormWcfService\obj\Debug\BookwormWcfService.csprojResolveAssemblyReference.cache

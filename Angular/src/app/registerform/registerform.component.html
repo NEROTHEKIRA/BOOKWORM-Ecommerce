@@ -1,0 +1,161 @@
+<div class="container-fluid">
+
+  <br/>
+  <div class="panel panel-primary">
+      <div class="panel-heading">Register here</div>
+      <div class="panel-body">
+
+  <form  [formGroup]="registrationUserForm" (ngSubmit)="onSubmit(registrationUserForm)">
+       
+    <div class="row">
+
+    <div class="col-sm-3">
+    </div>
+
+    <div class="col-sm-5">
+    
+            
+          <div class="form-group">
+            <label for="For Name">NAME</label>
+            <input [class.is-invalid]="Name.invalid && Name.touched"
+            type="text" 
+            placeholder="Enter your Name" 
+            class="form-control" 
+            formControlName="Name"
+            id="Name"> 
+            <div *ngIf="Name.invalid && Name.touched">
+                <small *ngIf="Name.errors?.required" class="text-danger">Name is required</small>
+                <small *ngIf="Name.errors?.minlength" class="text-danger">Name must be at least 5 characters</small>
+            </div>
+          </div>
+
+          <div class="form-group">
+              <label for="For Email">Email</label>
+              <input type="text" 
+              placeholder="Enter your Email Id" 
+              class="form-control" 
+              formControlName="Email"
+              id="Email">
+              <div *ngIf="Email.invalid && Email.touched">
+                <small *ngIf="Email.errors?.required" class="text-danger">Email is required</small>
+                <small *ngIf="Email.errors?.email" class="text-danger">Invalid Email</small>
+          </div>
+          </div>
+
+          <div class="form-group">
+              <label>Password</label>
+              <input type="password" 
+              placeholder="ENTER YOUR PASSWORD" 
+              class="form-control" 
+              formControlName="Password"
+              id="Password">
+              <div *ngIf="Password.invalid && Password.touched">
+                <small *ngIf="Password.errors?.required" class="text-danger">Password is required</small>
+                <small *ngIf="Password.errors?.minlength" class="text-danger">Password must be at least 8 characters</small>
+                <small *ngIf="Password.errors?.maxlength" class="text-danger">Max length of password should be 15 characters</small>
+          </div>
+          </div>
+
+          <div class="form-group">
+              <label>Confirm Password</label>
+              <input [class.is-invalid]="registrationUserForm.errors?.misMatch"
+              type="Password" 
+              placeholder="ENTER CONFIRM PASSWORD" 
+              class="form-control" 
+              formControlName="ConfirmPassword"
+              id="ConfirmPassword">
+              <small class="text-danger" *ngIf="registrationUserForm.errors?.misMatch">Passwords do not match</small>
+          </div>
+
+          <div class="panel panel-primary">
+              <div class="panel-heading">Address</div>
+              <div class="panel-body">
+        
+          <div class="form-group">
+              <label for="For House_no">House No</label>
+              <input type="number"
+              placeholder="ENTER HOUSE NUMBER" 
+              class="form-control" 
+              formControlName="House_no"
+              id="House_no">
+              <div *ngIf="House_no.invalid && House_no.touched">
+                <small *ngIf="House_no.errors?.required" class="text-danger">House no is required</small>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="For Street">Street</label>
+              <input type="text"
+              placeholder="ENTER STREET" 
+              class="form-control" 
+              formControlName="Street"
+              id="Street">
+              <div *ngIf="Street.invalid && Street.touched">
+                <small *ngIf="Street.errors?.required" class="text-danger">Street is required</small>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="For City">City</label>
+              <input type="text"
+              placeholder="ENTER CITY NAME" 
+              class="form-control" 
+              formControlName="City"
+              id="City">
+              <div *ngIf="City.invalid && City.touched">
+                <small *ngIf="City.errors?.required" class="text-danger">City is required</small>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="For Pincode">Pincode</label>
+              <input type="text"
+              placeholder="ENTER PINCODE" 
+              class="form-control" 
+              formControlName="Pincode"
+              id="Pincode">
+              <div *ngIf="Pincode.invalid && Pincode.touched">
+                <small *ngIf="Pincode.errors?.required" class="text-danger">Pincode is required</small>
+                <small *ngIf="Pincode.errors?.minlength" class="text-danger">Pincode must be at least 6 characters</small>
+                <small *ngIf="Pincode.errors?.maxlength" class="text-danger">Pincode must be at least 6 characters</small>
+          </div>
+          </div>
+          <div class="form-group">
+              <label for="For Landmark">Landmark</label>
+              <input type="text" 
+              placeholder="ENTER LANDMARK"
+              class="form-control" 
+              formControlName="Landmark"
+              id="Landmark">
+          </div>
+        </div>
+      </div>
+    
+
+          <div class="form-group">
+              <label for="For Date_of_birth">Date Of Birth</label>
+              <input type="date" 
+              placeholder="Enter your DOB" 
+              formControlName="Date_of_birth"
+              id="Date_of_birth">
+              <div *ngIf="Date_of_birth.invalid && Date_of_birth.touched">
+                <small *ngIf="Date_of_birth.errors?.required" class="text-danger">Date of birth is required</small>
+            </div>
+          </div>
+        
+        </div>
+  
+  
+  <div class="col-sm-4">
+  </div>
+
+    </div>
+
+  
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+
+      {{registrationUserForm.value | json}}
+
+      </div>
+    </div>
+     </div>

@@ -1,0 +1,40 @@
+<!-- 
+<div *ngFor = "let d of MyShelfProdctArray ">
+  
+    <table class="ShelfTable">
+        <tr>
+            <td>
+                    <img src="{{d.Prod_img}}" />
+            </td>
+            <td>
+                    <div align="center"><p><b> {{d.Prod_short_desc}}</b></p></div>
+                    <div align="center"><p><b> {{d.Prod_long_desc}} </b></p></div>
+            </td>
+            
+        </tr>
+        <br>
+    </table> -->
+<br>
+<div class="container">
+    <table class="table table-bordered table-striped">               
+                <thead>
+                    <tr>
+                    <th>BOOK IMAGE</th>
+                    <th>BOOK TITLE</th>    
+                    <th>BOOK DESCRIPTION</th>
+                    <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor = "let d of MyShelfProdctArray ">
+                    <td> <img src="{{d.Prod_img}}"  height="200" width="200" style="border:solid 5px"/></td>
+                    <td class="info" > <i><b> {{d.Prod_title}} </b></i> </td>
+                    <td class="success"> <b> {{d.Prod_long_desc}} </b></td>
+                    <td class="success"> <b> {{d.Prod_short_desc}} </b></td>
+                    </tbody>
+                    </table> 
+   <br>
+    <div class="text center">
+            <button (click) = logout() class="btn btn-danger" ><b>LOGOUT</b></button>
+    </div>             
+    </div>

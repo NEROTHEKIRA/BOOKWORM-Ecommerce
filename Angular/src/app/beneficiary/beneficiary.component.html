@@ -1,0 +1,72 @@
+<div class="container-fluid">
+
+    <br/>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Add Beneficiary Here</div>
+        <div class="panel-body">
+  
+    <form  [formGroup]="beneficiaryForm" (ngSubmit)="onSubmit(beneficiaryForm)">
+         
+      <div class="row">
+  
+      <div class="col-sm-3">
+      </div>
+  
+      <div class="col-sm-5">
+      
+              
+            <div class="form-group">
+              <label for="For Benf_name">Beneficiary Name</label>
+              <input 
+              type="text" 
+              placeholder="Enter Beneficiary Name" 
+              class="form-control" 
+              formControlName="Benf_name"
+              id="Benf_name"> 
+               
+            </div>
+  
+            <div class="form-group">
+                <label for="For Benf_acc_no">Beneficiary Account No</label>
+                <input 
+                type="number" 
+                placeholder="Enter Beneficiary Account No" 
+                class="form-control" 
+                formControlName="Benf_acc_no"
+                id="Benf_acc_no">
+            </div>
+  
+            <div class="form-group">
+                <label for="For Benf_contact_no">Beneficiary Contact No</label>
+                <input type="number" 
+                placeholder="Enter Beneficiary Contact No" 
+                class="form-control" 
+                formControlName="Benf_contact_no"
+                id="Benf_contact_no">
+            </div>
+  
+            <div class="form-group">
+                <label for="For Benf_email_id">Beneficiary Email Id</label>
+                <input  
+                type="email" 
+                placeholder="Enter Beneficiary Email Id " 
+                class="form-control" 
+                formControlName="Benf_email_id"
+                id="Benf_email_id">
+            </div>
+          
+          </div>
+    
+    
+    <div class="col-sm-4">
+    </div>
+  
+      </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+        </form>
+        {{beneficiaryForm.value | json}}
+        </div>
+      </div>
+       </div>

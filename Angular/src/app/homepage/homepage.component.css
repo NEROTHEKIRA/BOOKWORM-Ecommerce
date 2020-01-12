@@ -1,0 +1,138 @@
+.box{
+    border: solid 4px;
+    padding: 10px;
+}
+
+.btn:hover
+{
+background-color:#5cb85c
+ }
+
+ section, footer, nav {
+    display: block;
+  }
+  
+  body {
+    -webkit-text-size-adjust: none;
+    background: #ffcc00;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4em;
+    padding: 3em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  .tile {
+    width: 250px;
+    height: 350px;
+    margin: 2em;
+    position: relative;
+    float: left;
+  }
+  .tile .front, .tile .back {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+  }
+  .tile h3, .tile p, .tile a {
+    padding: 0 20px;
+  }
+  .tile img {
+    max-height: 225px;
+  }
+  .tile .front {
+    background: rgb(255, 255, 255);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+  }
+  .tile .front h3 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #000;
+    margin-top: -1.5em;
+    margin-bottom: 1.5em;
+  }
+  .tile .back {
+    background: #0b0b0c;
+    color: white;
+    z-index: 1;
+    padding-top: 50px;
+    height: 300px;
+  }
+  .tile .back h3 {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .tile .back a {
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    border-top: 1px solid #ffcc00;
+    margin: 0 20px;
+    padding: .5em 0;
+  }
+  .tile:hover .front {
+    top: -300px;
+    transform: rotate(5deg);
+  }
+
+
+  .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url('~/assets/Image/white.jpg') center center / cover no-repeat;
+    }
+  
+    .fullscreen-bg__video {
+      display: none;
+    }
+  }

@@ -1,0 +1,14 @@
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\BookWorm_Day1.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\BookWorm_Day1.pdb
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Edm.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.OData.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Services.Client.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Services.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\System.Spatial.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Edm.xml
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.OData.xml
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Services.xml
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\Microsoft.Data.Services.Client.xml
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\bin\System.Spatial.xml
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\obj\Debug\BookWorm_Day1.dll
+D:\Hiren_bookworm\BookWorm_Day1\BookWorm_Day1\BookWorm_Day1\obj\Debug\BookWorm_Day1.pdb
