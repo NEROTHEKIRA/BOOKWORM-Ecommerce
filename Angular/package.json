@@ -22,7 +22,7 @@
     "bootstrap": "^3.3.7",
     "bootstrap-imageupload": "^1.1.3",
     "core-js": "^2.5.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-pick-datetime": "^7.0.0",
     "rxjs": "~6.3.3",
     "tether": "^1.4.7",
